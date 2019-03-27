@@ -1,5 +1,14 @@
 # Changelog
 
+# 10.2.0 [153](https://github.com/ServiceInnovationLab/openfisca-aotearoa/pull/153)
+* Update to Openfisca Core 26.0
+
+# 10.1.3 [148](https://github.com/ServiceInnovationLab/openfisca-aotearoa/pull/148)
+* Add Hamish to maintainers
+
+# 10.1.2 [150](https://github.com/ServiceInnovationLab/openfisca-aotearoa/pull/150)
+* Automate git tagging of release
+
 # 10.1.1 [122](https://github.com/ServiceInnovationLab/openfisca-aotearoa/pull/122)
 * Grammar fix up in variable labels
 
