@@ -1,5 +1,21 @@
 # Changelog
 
+# 11.2.0 [176](https://github.com/ServiceInnovationLab/openfisca-aotearoa/pull/176)
+* Bug Fix
+  - Rates Rebate algorithm formula incorrectly allowed negative excess income
+
+# 11.1.3 [174](https://github.com/ServiceInnovationLab/openfisca-aotearoa/pull/174)
+* No functional changes.
+  - Removing unnecessary family groups in tests
+  - Better names for tests
+
+# 11.1.2 [170](https://github.com/ServiceInnovationLab/openfisca-aotearoa/pull/170)
+* No functional changes.
+  - Removing unnecessary family/titled_property groups in tests
+
+# 11.1.1 [169](https://github.com/ServiceInnovationLab/openfisca-aotearoa/pull/169)
+* Rename duplicate tests (same name, different test)
+
 # 11.1.0 [167](https://github.com/ServiceInnovationLab/openfisca-aotearoa/pull/167)
 * Adds values for Rates Rebates 2018 to 2019
 

@@ -24,11 +24,8 @@
         principal_caregiver: "Papatūānuku"
         partners: ["Rakinui"]
         children: ["Tāne", "Rongo", "Ikatere"]
-    titled_properties:
-      Whare:
-        others: ["Papatūānuku", "Rakinui", "Tāne", "Rongo", "Ikatere"]
   output:
-    family_scheme__qualifies_for_family_tax_credit: [1, 0, 0, 0, 0]
+    family_scheme__qualifies_for_family_tax_credit: [true, false, false, false, false]
 - name: Tests persons income over threshold and not elible for family tax credit
   period: 2018-08
   absolute_error_margin: 0
@@ -38,6 +35,9 @@
         date_of_birth: 1999-01-01
         family_scheme__assessable_income:
           2018: 20000
+
+
+
         family_scheme__family_tax_credit_income_under_threshold: false
       "Rakinui":
         date_of_birth: 1996-01-01
@@ -54,12 +54,10 @@
         principal_caregiver: "Papatūānuku"
         partners: ["Rakinui"]
         children: ["Tāne", "Rongo", "Ikatere"]
-    titled_properties:
-      Whare:
-        others: ["Papatūānuku", "Rakinui", "Tāne", "Rongo", "Ikatere"]
   output:
-    family_scheme__qualifies_for_family_tax_credit: [0, 0, 0, 0, 0]
-- name: Family tax credit - too much income
+    family_scheme__qualifies_for_family_tax_credit: [false, false, false, false, false]
+
+- name: Family tax credit - solo parent with too much income
   period: 2018-08
   absolute_error_margin: 0
   input:
@@ -71,15 +69,10 @@
     families:
       Whanau:
         principal_caregiver: "Papatūānuku"
-    titled_properties:
-      Whare:
-        others: ["Papatūānuku"]
   output:
-    family_scheme__qualifies_for_family_tax_credit:
-      2018-08:
-        - false
+    family_scheme__qualifies_for_family_tax_credit: false
 
-- name: Family tax credit - too much income
+- name: Family tax credit - couple with too much income
   period: 2018-08
   absolute_error_margin: 0
   input:
@@ -96,10 +89,5 @@
       Whanau:
         principal_caregiver: "Papatūānuku"
         partners: ["Rakinui"]
-    titled_properties:
-      Whare:
-        others: ["Papatūānuku", "Rakinui"]
   output:
-    family_scheme__qualifies_for_family_tax_credit:
-      2018-08:
-        - false
+    family_scheme__qualifies_for_family_tax_credit: false

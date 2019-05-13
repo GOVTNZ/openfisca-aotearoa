@@ -13,13 +13,8 @@
     families:
       "Whanau":
         others: ["NZ-Citizen"]
-    titled_properties:
-      whare:
-        others: ["NZ-Citizen"]
-
   output:
-    home_help__eligible_for_home_help:
-      - false
+    home_help__eligible_for_home_help: false
 
 - name: "Home Help, eligible as principal caregiver"
   period: 2018-08
@@ -35,12 +30,8 @@
     families:
       "Whanau":
         principal_caregiver: "NZ-Citizen"
-    titled_properties:
-      whare:
-        others: ["NZ-Citizen"]
   output:
-    home_help__eligible_for_home_help:
-      - true
+    home_help__eligible_for_home_help: true
 
 - name: "Home Help, ineligible as non citizen"
   period: 2018-08
@@ -56,13 +47,8 @@
     families:
       "Whanau":
         principal_caregiver: "Non-Citizen"
-    titled_properties:
-      whare:
-        others: ["Non-Citizen"]
   output:
-    home_help__eligible_for_home_help:
-      2018-08:
-        - false
+    home_help__eligible_for_home_help: false
 
 - name: "Home Help, has no immediate family"
   period: 2018-08
@@ -77,12 +63,8 @@
     families:
       "Whanau":
         principal_caregiver: "NZ-Citizen"
-    titled_properties:
-      whare:
-        others: ["NZ-Citizen"]
   output:
-    home_help__eligible_for_home_help:
-      - true
+    home_help__eligible_for_home_help: true
 
 - name: "Home Help, has immediate family"
   period: 2018-08
@@ -97,11 +79,6 @@
     families:
       "Whanau":
         others: ["Immediate Family"]
-    titled_properties:
-      whare:
-        others: ["Immediate Family"]
 
   output:
-    home_help__eligible_for_home_help:
-      2018-08:
-        - false
+    home_help__eligible_for_home_help: false
