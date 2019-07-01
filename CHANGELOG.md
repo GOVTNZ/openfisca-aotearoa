@@ -1,5 +1,18 @@
 # Changelog
 
+# 12.0.0 [183](https://github.com/ServiceInnovationLab/openfisca-aotearoa/pull/183)
+* Upgrade to Open Fisca Core 30.x
+* Breaking changes:
+ - no longer accepts MONTH period values for variables that are by DAY
+ - age variables must be set for a DAY period, not MONTH or YEAR
+
+# 11.3.2 [184](https://github.com/ServiceInnovationLab/openfisca-aotearoa/pull/184)
+* No functional changes.
+  - Added regression test for age calculations
+
+# 11.3.0 [178](https://github.com/ServiceInnovationLab/openfisca-aotearoa/pull/178)
+* Accident Compensation Act - Loss of Earnings and Loss of Potential Earnings
+
 # 11.2.0 [176](https://github.com/ServiceInnovationLab/openfisca-aotearoa/pull/176)
 * Bug Fix
   - Rates Rebate algorithm formula incorrectly allowed negative excess income
